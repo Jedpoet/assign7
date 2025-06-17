@@ -1,64 +1,30 @@
-# 2025 OOP Assignment #5
-- Due: 2025/5/12 23:59:59
-- Author: 111703003 廖經翔
-- Contact: 111703003@g.nccu.edu.tw
+# Red Rain
+
+**Red Rain** 是一款簡潔快速的 CLI 彈幕生存遊戲。你扮演一個藍色方塊，試著在紅色方塊的風暴中生存下來。
+
+![screenshot](./screenshot.png) <!-- 如果有畫面可以截圖加上 -->
+
+## 🎮 遊戲規則
+
+- 你是 **藍色方塊**。
+- 使用鍵盤：
+  - `W` / `S` 上下移動（玩家一）
+  - 或 `K` / `J` 上下移動（玩家二或偏好另一套鍵位）
+- 躲避從右方出現的 **紅色方塊**（代表子彈或敵人）
+- 每次被紅色方塊碰撞，會失去一條命
+- 起始共有 **5 條命**
+- 每過一秒，紅色方塊的密度會逐漸增加
+- **目標：儘量活得久一點！**
+- 按 `esc` 離開遊戲
+
 ---
 
-## 2D Console Game (Part1)
+## 🛠️ 編譯與執行
 
-Obejctive: Building a basic structure of a game and practice Object-Oriented Design
-
-### Description
-
-In this assignment, you are required to complete the following:
-1. Complete the missing part with the `//TODO` comments.
-2. Setup the simple Model-View-Controller architecture.
-3. Create some GameObjects and player-controlled GameObject in Map
-
-### Expected Output
-
-
-
-https://github.com/user-attachments/assets/5e90f4cc-372d-4232-abac-67e397f0f73d
-
-### Compile and Run
-Before compiling the program, in **Project Folder**:
-```console
+```bash
 mkdir build
-```
-```console
 cd build
-```
-
-Then in `build/`:
-```console
 cmake ..
-```
-
-To compile the program, in `build/`:
-```console
 make
-```
-
-To run the program, in `build/`:
-```console
 ./exec
-```
-
-### Scoreing Criteria
-|Description|Score|
-|-----|-----|
-|Submit the assignment|20|
-|Able to compile|20|
-|Draw static GameObject correctly|20|
-|Draw dynamic GameObject correctly|10|
-|Implement IconFactory|10|
-|Implement GameObjectFactory|10|
-|Handling key input to control GameObjects|10|
-
-### Reminder
-
-1. The default include path is set to `include/`, any header file below `include` can be included directly.
-2. You can add new files for more features, but the required part noted by `//TODO` must be implemented.
-3. After finishing this assignment, you can start to think what games you can make with the architecture.
 
